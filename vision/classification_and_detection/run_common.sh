@@ -21,7 +21,7 @@ for i in $* ; do
        tf|onnxruntime|tflite|pytorch) backend=$i; shift;;
        cpu|gpu) device=$i; shift;;
        gpu) device=gpu; shift;;
-       resnet50|mobilenet|ssd-mobilenet|ssd-resnet34|ssd-resnet34-tf) model=$i; shift;;
+       resnet50|mobilenet|mobilenet2|ssd-mobilenet|ssd-resnet34|ssd-resnet34-tf) model=$i; shift;;
     esac
 done
 
