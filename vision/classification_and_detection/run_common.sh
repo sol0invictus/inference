@@ -43,6 +43,10 @@ if [ $name == "mobilenet-tf" ] ; then
     model_path="$MODEL_DIR/mobilenet_v1_1.0_224_frozen.pb"
     profile=mobilenet-tf
 fi
+if [ $name == "mobilenet2-tf" ] ; then
+    model_path="$MODEL_DIR/mobilenet_v2_1.0_224_frozen.pb"
+    profile=mobilenet2-tf
+fi
 if [ $name == "ssd-mobilenet-tf" ] ; then
     model_path="$MODEL_DIR/ssd_mobilenet_v1_coco_2018_01_28.pb"
     profile=ssd-mobilenet-tf
